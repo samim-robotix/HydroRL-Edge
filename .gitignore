@@ -1,0 +1,98 @@
+# ==============================================================================
+# HydroRL-Edge: Git Ignore Configuration for Embedded Robotics & DRL Platform
+# ==============================================================================
+
+# --- Python & Virtual Environments ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.pytest_cache/
+
+# --- Reinforcement Learning & TensorBoard Telemetry ---
+DDPG_hydraulic_logs/
+runs/
+logs/
+checkpoints/
+*.tfevents.*
+wandb/
+.neptune/
+
+# --- Embedded Firmware & Hardware Compilation Artifacts ---
+*.hex
+*.bin
+*.elf
+*.axf
+*.map
+*.o
+*.obj
+*.d
+*.a
+*.lib
+*.so
+*.dylib
+*.dll
+*.out
+
+# --- Embedded IDEs, Toolchains & CMake ---
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+.pio/
+.pioenvs/
+.piolibdeps/
+Debug/
+Release/
+ipch/
+*.VC.db
+*.opensdf
+*.opendb
+*.sdf
+*.suo
+*.user
+*.userosv
+
+# --- IDEs & System Files ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.cproject
+.settings/
+
+# --- Operating System Artifacts ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# --- Temporary & Scratch Files ---
+*.tmp
+*.bak
+*.swp
+*~
+scratch/
